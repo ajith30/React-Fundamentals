@@ -69,10 +69,12 @@ Visit https://browserslist.dev/ for more
 
 ## creating script for dev and production build
 
-- For dev: "start": "parcel <entry_point>
+- For dev: 
+    "start": "parcel <entry_point>
   Ex:  "start": "parcel index.html"
 
-- For production: "build": "parcel build <entry_point>
+- For production: 
+    "build": "parcel build <entry_point>
   Ex:  "start": "parcel build index.html"
 
 ### Add like below in the scripts inside the package.json
