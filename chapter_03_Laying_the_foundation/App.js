@@ -51,6 +51,30 @@ const HeadingComponent = () => (
 );
 
 
+const name = "Ajithkumar";
+
+const Course = () => (
+  <h1>This Namaste React 
+    Course
+  </h1>
+);
+
+const Description = () => (
+  <div>
+    {/* Rendering /Writting JS Code dirrectly inside {} */}
+    {name} 
+
+    {/* Rendering Component inside another component  and Below are one and the same thing*/}
+    {Course()}
+    <Course />
+    <Course></Course>
+  </div>
+);
 
 
-root.render(<HeadingComponent />);
+
+// root.render(<HeadingComponent />); // we can only use one render() at the root
+root.render(<Description />);
+
+
+//Node: JSX skips any misallenious attacks AKA Cross Sites Scripting and prevent these attcaks
