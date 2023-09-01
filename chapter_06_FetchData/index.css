@@ -69,3 +69,8 @@ body {
 .res-card .cuisines {
   overflow-wrap: break-word;
 }
+
+.log-btn {
+  padding: 0 10px;
+  cursor: pointer;
+}
