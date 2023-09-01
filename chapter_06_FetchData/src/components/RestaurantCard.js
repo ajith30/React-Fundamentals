@@ -4,8 +4,8 @@ const RestaurantCard = (props) => {
 
   const {resCard} = props;
   
-  const { name, cuisines, cloudinaryImageId, avgRating, sla: {slaString} } = resCard.card.info;
-
+  const { name, cuisines, cloudinaryImageId, avgRating, sla: {slaString} } = resCard?.info;
+  
   return (
     <div className="res-card" style={{ backgroundColor: "lightgray" }}>
       <img src={`${CLOUDINARY_IMAGE}${cloudinaryImageId}`} alt="dish" />

@@ -21,5 +21,13 @@
   import {<variable>} from "path"
 
 
-## Reconcilation Algorithm (React Fiber)
-- ## VirtualDOM
+
+## Optional chaining
+
+    const cardsWithRestaurants = allRes.data.cards.filter(card => 
+       card.card &&
+       card.card.card &&
+       card.card.card.gridElements &&
+       card.card.card.gridElements.infoWithStyle &&
+       card.card.card.gridElements.infoWithStyle.restaurants !== undefined
+     );
